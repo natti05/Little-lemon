@@ -30,11 +30,11 @@
         <form action="post">
             <div>
                 <label for="user-first-name">First Name</label><br>
-                <input type="text" id="user-first-name" name="user-first-name">
+                <input type="text" id="user-first-name" name="user-first-name" required minlength="3" maxlength="12">
             </div>
             <div>
                 <label for="user-last-name">Last Name</label><br>
-                <input type="text" id="user-last-name" name="user-last-name">
+                <input type="text" id="user-last-name" name="user-last-name" required>
             </div>
             <div>
                 <label for="user-email"></label>E-mail<br>
@@ -42,7 +42,7 @@
             </div>
             <div>
                 <label for="user-password">Password</label><br>
-                <input type="password" id="user-password" name="user-password">
+                <input type="password" id="user-password" name="user-password" required minlength="5">
             </div>
             <div>
                 <label for="user-corfirm-email"></label>Corfirm Password<br>
@@ -55,6 +55,11 @@
     <footer>
         <p>copyright little lime</p>
     </footer>
+    <style>
+        input:focus:invalid {
+            border: 2px solid red;
+        }
+    </style>
     <script src="js/script.js"></script>
 </body>
 
