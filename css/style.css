@@ -2,18 +2,32 @@ input:focus:invalid {
     border: 2px solid red;
 }
 
+nav ::first-letter {
+    /* hsl(hue, saturation, lightness) */
+    color: hsl(190, 51%, 44%);
+    font-weight: bold;
+}
+
+
+/*  to prevent overwriting one of the rules, you must place:
+ link, visited, hover, active. (LVHA)      */
+
 
 /* menu */
 
 .menu {
-    max-width: 800px;
+    max-width: 700px;
     display: flex;
     justify-content: center;
     background-color: #E0E0E2;
 }
 
+.food-type {
+    text-align: center;
+}
+
 .container {
-    padding: 10px;
+    padding: 30px;
 }
 
 .label {
@@ -28,10 +42,11 @@ input:focus:invalid {
 .food-item {
     margin: 25px;
     font-size: 12px;
+    width: 180px;
 }
 
 b {
     float: right;
-    margin-top: -15px;
+    margin-top: -14px;
     color: darkcyan;
 }
