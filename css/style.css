@@ -2,6 +2,24 @@ input:focus:invalid {
     border: 2px solid red;
 }
 
+img.logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+}
+
+nav {
+    display: grid;
+    justify-content: center;
+}
+
+li>a,
+li {
+    text-decoration: none;
+    list-style-type: none;
+}
+
 nav ::first-letter {
     /* hsl(hue, saturation, lightness) */
     color: hsl(190, 51%, 44%);
@@ -15,18 +33,19 @@ nav ::first-letter {
 
 /* menu */
 
-.menu {
-    max-width: 700px;
-    display: flex;
-    justify-content: center;
-    background-color: #E0E0E2;
-}
-
-.food-type {
+main>h2 {
     text-align: center;
 }
 
 .container {
+    background-color: #E0E0E2;
+}
+
+.food-type {
+    margin-left: 30px;
+}
+
+.menu {
     padding: 30px;
 }
 
@@ -49,4 +68,13 @@ b {
     float: right;
     margin-top: -14px;
     color: darkcyan;
+}
+
+@media (min-width: 1200px) {
+    .container {
+        margin: 0 80px 0 80px;
+        display: flex;
+        justify-content: center;
+        background-color: #E0E0E2;
+    }
 }
