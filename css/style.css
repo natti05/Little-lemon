@@ -1,81 +1,96 @@
-html>* {
+* {
     padding: 0;
     margin: 0;
-}
-
-img.logo {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 300px;
-}
-
-nav {
-    display: grid;
-    justify-content: center;
-}
-
-li>a,
-li {
-    text-decoration: none;
-    list-style-type: none;
-}
-
-nav ::first-letter {
-    /* hsl(hue, saturation, lightness) */
-    color: hsl(190, 51%, 44%);
-    font-weight: bold;
 }
 
 
 /*  to prevent overwriting one of the rules, you must place:
  link, visited, hover, active. (LVHA)      */
 
-
-/* menu */
-
-main>h2 {
-    text-align: center;
+body {
+    background-color: white;
+    margin: 0 80px 0 80px;
 }
 
-.container {
-    background-color: #E0E0E2;
+img.logo {
+    margin: 10px auto 10px auto;
+    display: block;
+    width: 200px;
 }
 
-.food-type {
-    margin-left: 30px;
+nav li {
+    display: inline-block;
 }
 
-.menu {
-    padding: 30px;
+nav ul {
+    background-color: hsl(159, 35%, 87%);
+    list-style: none;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    font-size: 2em;
 }
 
-.label {
+a {
+    text-decoration: none;
+    color: black;
+}
+
+nav ::first-letter {
+    /* hsl(hue, saturation, lightness) */
+    color: hsl(160, 13%, 33%);
     font-weight: bold;
 }
 
-.description {
-    font-style: italic;
-    border-top: 2px solid #495E57;
+
+/* main */
+
+.promotion {
+    margin-top: 40px;
+    padding: 20px;
+    height: 200px;
+    border-radius: 10px;
+    border: 1px solid hsl(160, 13%, 33%);
 }
 
-.food-item {
-    margin: 25px;
-    font-size: 12px;
-    width: 180px;
+.promotion h2 {
+    font-size: 2em;
 }
 
-b {
-    float: right;
-    margin-top: -14px;
-    color: darkcyan;
+section {
+    display: flex;
 }
 
-@media (min-width: 1200px) {
-    .container {
-        margin: 0 80px 0 80px;
-        display: flex;
-        justify-content: center;
-        background-color: #E0E0E2;
-    }
+article {
+    flex: 1;
+    margin: 16px;
+    padding: 8px;
+}
+
+article h2 {
+    margin-bottom: 35px;
+}
+
+table {
+    padding: 16px;
+    border: 1px solid hsl(160, 13%, 33%);
+    border-radius: 10px;
+}
+
+
+/* form */
+
+
+/* footer */
+
+footer {
+    border-top: 1px solid hsl(160, 13%, 33%);
+    display: flex;
+    justify-content: space-between;
+    margin: 100px 90px 0 90px;
+    padding-top: 5px;
+}
+
+footer {
+    flex: 1;
 }

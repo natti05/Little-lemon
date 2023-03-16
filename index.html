@@ -17,7 +17,7 @@
 
 <body>
     <header>
-        <img src="logo.png" alt="logo" class="logo">
+        <img src="logo/logotitle.png" alt="logo" class="logo">
     </header>
     <nav>
         <ul>
@@ -27,30 +27,72 @@
         </ul>
     </nav>
     <main>
-        <h1>Book a table</h1>
-        <form method="POST">
-            <div>
-                <label for="email_address">Email Address</label>
-                <input type="email" id="email_address" name="email_address" required>
-            </div>
-            <div>
-                <label for="booking-date">Date</label>
-                <input type="date" id="booking-date" name="booking-date" required>
-            </div>
-            <div>
-                <label for="people">Person</label>
-                <input type="number" min="1" max="10">
-            </div>
-            <div>
-                <label>
-            <input type="checkbox" id="agree" name="agree" required> 
-            I agree to the cancellation policy
-        </label>
-            </div>
-            <button type="submit">Book now</button>
-        </form>
+        <section>
+            <article class="promotion">
+                <h2>Get 20% off this friday!</h2>
+            </article>
+        </section>
+        <section>
+            <article>
+                <h2>Our Seasonal Menu</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+            </article>
+            <article>
+                <h2>Book a table</h2>
+                <form method="POST">
+                    <div>
+                        <label for="email_address">Email Address</label>
+                        <input type="email" id="email_address" name="email_address" required>
+                    </div>
+                    <div>
+                        <label for="booking-date">Date</label>
+                        <input type="date" id="booking-date" name="booking-date" required>
+                    </div>
+                    <div>
+                        <label for="people">Person</label>
+                        <input type="number" min="1" max="10">
+                    </div>
+                    <div>
+                        <label>
+                    <input type="checkbox" id="agree" name="agree" required> 
+                    I agree to the cancellation policy
+                </label>
+                    </div>
+                    <button type="submit">Book now</button>
+                </form>
+            </article>
+            <article>
+                <h2>Opening Hours</h2>
+                <table>
+                    <tr>
+                        <th>Day </th>
+                        <th>Opening hours</th>
+                    </tr>
+                    <tr></tr>
+                    <tr></tr>
+                    <tr>
+                        <td>Tuesday </td>
+                        <td>17:00 - 22:00</td>
+                    </tr>
+                    <tr>
+                        <td>Friday </td>
+                        <td>17:00 - 23:00</td>
+                    </tr>
+                    <tr>
+                        <td>Saturday </td>
+                        <td>11:30 - 23:00</td>
+                    </tr>
+                    <tr>
+                        <td>Sunday </td>
+                        <td>11:30 - 21:00</td>
+                    </tr>
+                </table>
+            </article>
+        </section>
     </main>
     <footer>
+        <img src="logo/logolemon.png" alt="logo" width="25px">
         <p>copyright little lime</p>
     </footer>
     <script src="js/script.js"></script>
