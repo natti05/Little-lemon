@@ -23,39 +23,51 @@ nav li {
 }
 
 nav ul {
-    background-color: hsl(159, 35%, 87%);
+    margin: 8px;
+    /* hsl(hue, saturation, lightness) */
+    background-color: hsl(160, 13%, 33%);
     list-style: none;
     align-items: center;
     display: flex;
     justify-content: space-around;
     font-size: 2em;
+    border-radius: 10px;
+    height: 58px;
 }
 
 a {
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 nav ::first-letter {
-    /* hsl(hue, saturation, lightness) */
-    color: hsl(160, 13%, 33%);
     font-weight: bold;
 }
 
 
 /* main */
 
-.promotion {
-    margin-top: 40px;
-    padding: 20px;
-    height: 200px;
-    border-radius: 10px;
-    border: 1px solid hsl(160, 13%, 33%);
+.promotion h2 {
+    color: white;
+    text-shadow: -2px -2px 0 #000;
+    font-size: 3em;
+    margin: 40px;
+    position: absolute;
 }
 
-.promotion h2 {
-    font-size: 2em;
+.promotion {
+    background-image: url("../promotion.jpg");
+    margin: 0 8px 0 8px;
+    border-radius: 10px;
+    width: 1500px;
+    height: 300px;
 }
+
+
+/* .promotion img {
+    margin: 8px;
+    max-width: 98%;
+} */
 
 section {
     display: flex;
@@ -63,18 +75,26 @@ section {
 
 article {
     flex: 1;
-    margin: 16px;
-    padding: 8px;
+    margin: 8px;
+    background-color: hsl(0, 0%, 93%);
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 10px;
 }
 
 article h2 {
     margin-bottom: 35px;
 }
 
+.seasonal img {
+    width: 100%;
+}
+
 table {
     padding: 16px;
     border: 1px solid hsl(160, 13%, 33%);
     border-radius: 10px;
+    font-size: 1.5em;
 }
 
 
@@ -87,7 +107,7 @@ footer {
     border-top: 1px solid hsl(160, 13%, 33%);
     display: flex;
     justify-content: space-between;
-    margin: 100px 90px 0 90px;
+    margin: 90px 90px 0 90px;
     padding-top: 5px;
 }
 
