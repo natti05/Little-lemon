@@ -1,9 +1,15 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
 /* main */
 
 .promotion h2 {
     color: white;
     text-shadow: -2px -2px 0 #000;
-    font-size: 3em;
+    font-size: 2em;
     margin: 40px;
     position: absolute;
 }
@@ -12,7 +18,6 @@
     background-image: url("../promotion.jpg");
     margin: 0 8px 0 8px;
     border-radius: 10px;
-    width: 1500px;
     height: 300px;
 }
 
@@ -21,10 +26,6 @@
     margin: 8px;
     max-width: 98%;
 } */
-
-section {
-    display: flex;
-}
 
 article {
     flex: 1;
@@ -49,6 +50,11 @@ table {
     border-radius: 10px;
     font-size: 1.5em;
     margin: auto;
+    display: contents;
+}
+
+#open td {
+    padding: 10px;
 }
 
 
@@ -72,4 +78,49 @@ button {
     padding: 8px;
     border: 0px;
     border-radius: 8px;
+}
+
+
+/********** Large devices only **********/
+
+@media (min-width: 1200px) {
+    .promotion {
+        width: 1500px;
+    }
+    section {
+        display: flex;
+    }
+    .promotion h2 {
+        font-size: 3em;
+    }
+}
+
+
+/********** Medium devices only **********/
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .promotion h2 {
+        font-size: 3em;
+    }
+    .promotion {
+        width: 1500px;
+    }
+    section {
+        display: flex;
+    }
+}
+
+
+/********** Small devices only **********/
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .promotion h2 {
+        font-size: 3em;
+    }
+    .promotion {
+        width: 1500px;
+    }
+    section {
+        display: flex;
+    }
 }

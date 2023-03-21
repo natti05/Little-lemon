@@ -8,6 +8,7 @@ main>h2 {
 }
 
 .container {
+    justify-content: center;
     background-color: #E0E0E2;
 }
 
@@ -31,7 +32,6 @@ main>h2 {
 .food-item {
     margin: 25px;
     font-size: 12px;
-    width: 180px;
 }
 
 b {
@@ -40,11 +40,44 @@ b {
     color: darkcyan;
 }
 
+
+/********** Large devices only **********/
+
 @media (min-width: 1200px) {
     .container {
-        margin: 0 80px 0 80px;
+        margin: 0 8px 0 8px;
         display: flex;
-        justify-content: center;
-        background-color: #E0E0E2;
+        justify-content: space-evenly;
+    }
+    .food-item {
+        width: 28vw;
+    }
+}
+
+
+/********** Medium devices only **********/
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .container {
+        margin: 0 8px 0 8px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .food-item {
+        width: 28vw;
+    }
+}
+
+
+/********** Small devices only **********/
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .food-item {
+        width: 28vw;
+    }
+    .container {
+        margin: 0 8px 0 8px;
+        display: flex;
+        justify-content: space-evenly;
     }
 }
