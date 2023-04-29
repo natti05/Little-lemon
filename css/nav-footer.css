@@ -3,10 +3,6 @@
     margin: 0;
 }
 
-
-/*  to prevent overwriting one of the rules, you must place:
- link, visited, hover, active. (LVHA)      */
-
 img.logo {
     margin: 10px auto 10px auto;
     display: block;
